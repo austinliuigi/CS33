@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>answers</title>
+  <style>
+/*
+ * I add this to html files generated with pandoc.
+ */
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  color: #444;
+  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  font-size: 12px;
+  line-height: 1.7;
+  padding: 1em;
+  margin: auto;
+  max-width: 42em;
+  background: #fefefe;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0b0080;
+}
+
+a:hover {
+  color: #06e;
+}
+
+a:active {
+  color: #faa700;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+*::-moz-selection {
+  background: rgba(255, 255, 0, 0.3);
+  color: #000;
+}
+
+*::selection {
+  background: rgba(255, 255, 0, 0.3);
+  color: #000;
+}
+
+a::-moz-selection {
+  background: rgba(255, 255, 0, 0.3);
+  color: #0645ad;
+}
+
+a::selection {
+  background: rgba(255, 255, 0, 0.3);
+  color: #0645ad;
+}
+
+p {
+  margin: 1em 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+  line-height: 125%;
+  margin-top: 2em;
+  font-weight: normal;
+}
+
+h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.9em;
+}
+
+blockquote {
+  color: #666666;
+  margin: 0;
+  padding-left: 3em;
+  border-left: 0.5em #EEE solid;
+}
+
+hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #eee;
+  margin: 1em 0;
+  padding: 0;
+}
+
+pre, code, kbd, samp {
+  color: #000;
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 0.98em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 2em;
+}
+
+li p:last-child {
+  margin-bottom: 0;
+}
+
+ul ul, ol ol {
+  margin: .3em 0;
+}
+
+dl {
+  margin-bottom: 1em;
+}
+
+dt {
+  font-weight: bold;
+  margin-bottom: .8em;
+}
+
+dd {
+  margin: 0 0 .8em 2em;
+}
+
+dd:last-child {
+  margin-bottom: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+figure {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+figure img {
+  border: none;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 0 0 .8em;
+}
+
+table {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th {
+  padding: .2em 1em;
+  background-color: #eee;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+table td {
+  padding: .2em 1em;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.author {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    max-width: 100%;
+  }
+
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  hr {
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid black;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page :left {
+    margin: 15mm 20mm 15mm 10mm;
+}
+
+  @page :right {
+    margin: 15mm 10mm 15mm 20mm;
+}
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css" />
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="section">2.71</h1>
+<h2 id="problem">Problem</h2>
+<p>We want to create a data structure where 4 signed bytes are packed
+into a 32-bit unsigned int (<code>typedef unsigned packed_t</code>). We
+need to be able to extract a desired byte from the packed “word”.</p>
+<h2 id="visualization">Visualization</h2>
+<pre><code>1100 0011 1010 0101 0011 1100 0101 1010  &lt;- unsigned int
++---+---+ +---+---+ +---+---+ +---+---+
+    |         |         |         |
+ Byte 3    Byte 2    Byte 1    Byte 0</code></pre>
+<h2 id="answers">Answers</h2>
+<h3 id="a.-faulty-implementation">A. Faulty implementation</h3>
+<p>The code is trying to bit shift the word in such a way that the
+desired byte is located at the last 8 bits of the shifted word.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> xbyte<span class="op">(</span>packed_t word<span class="op">,</span> <span class="dt">int</span> bytenum<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> shifted_word <span class="op">=</span> <span class="op">(</span>word <span class="op">&gt;&gt;</span> <span class="op">(</span>bytenum <span class="op">&lt;&lt;</span> <span class="dv">3</span><span class="op">));</span>  <span class="co">// shift word by (bytenum * 8)</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="op">(</span>shifted_word <span class="op">&amp;</span> <span class="bn">0xFF</span><span class="op">);</span>  <span class="co">// extract only last 8 bits of shifted_word</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p>The issue lies in how the last 8 bits are extracted. Since the
+shifted word is always bitwise and’ed with 0xFF, the padding is always
+filled with zeros. This is undesired since our byte should represent a
+<em>signed</em> int, which if negative, should be padded by ones.</p>
+<h3 id="b.-correct-implementation">B. Correct implementation</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> xbyte<span class="op">(</span>packed_t word<span class="op">,</span> <span class="dt">int</span> bytenum<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">// shift word so that byte occupies the 1st 8 bits (leftmost side)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> left_shifted_word <span class="op">=</span> <span class="op">(</span>word <span class="op">&lt;&lt;</span> <span class="op">(</span><span class="dv">3</span> <span class="op">-</span> <span class="op">(</span>bytenum <span class="op">&lt;&lt;</span> <span class="dv">3</span><span class="op">)));</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">// shift byte to rightmost side (padded by ones if neg. else zeros)</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="op">(</span>left_shifted_word <span class="op">&gt;&gt;</span> <span class="dv">24</span><span class="op">);</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h1 id="section-1">2.82</h1>
+<h2 id="problem-1">Problem</h2>
+<p>The following is the initial code for the problem:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>    <span class="co">// ints are 32 bits for this problem</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x <span class="op">=</span> random<span class="op">();</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> y <span class="op">=</span> random<span class="op">();</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">// unsigned ints are 32 bits for this problem</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unsigned</span> ux <span class="op">=</span> <span class="op">(</span><span class="dt">unsigned</span><span class="op">)</span> x<span class="op">;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unsigned</span> uy <span class="op">=</span> <span class="op">(</span><span class="dt">unsigned</span><span class="op">)</span> y<span class="op">;</span></span></code></pre></div>
+<p>Given the expressions for each problem, determine if they are
+<em>always</em> true. If yes, show a mathematical proof, else give a
+counterexample.</p>
+<h2 id="answers-1">Answers</h2>
+<h4 id="a.-x-y--x--y">A. <code>(x &lt; y) == (-x &gt; -y)</code></h4>
+<p>False, if <code>x</code> is <em>TMIN</em>, then the first expression
+is always true for any value of <code>y</code> that is greater than
+<em>TMIN</em>. However, in that case, <code>-x</code> is <em>TMIN</em>,
+which any value of <code>-y</code> cannot be less than.</p>
+<p>For example:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">y</th>
+<th style="text-align: center;">(x &lt; y)</th>
+<th style="text-align: center;">(-x &gt; -y)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><em>TMIN</em></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<h4 id="b.-x-y-4-y---x-17y-15x">B.
+<code>((x + y) &lt;&lt; 4) + (y - x) == 17*y + 15*x</code></h4>
+<p>True. If one side overflows the other overflows as well.</p>
+<p><span class="math display">\begin{align*}
+    ((x + y) &lt;&lt; 4) + (y - x) &amp;= 17y + 15x \\
+    (x + y) &lt;&lt; 4 &amp;= 16y + 16x \\
+     &amp;= 16(y + x) \\
+     &amp;= 2^4(y + x) \\
+\end{align*}</span></p>
+<h4 id="c.-x-y-1-x-y">C. <code>~x + ~y + 1 == ~(x + y)</code></h4>
+<p>True, by using definition of negation: <span class="math inline">-x =
+\sim x + 1</span>.</p>
+<p><span class="math display">\begin{align*}
+    \sim x + \sim y + 1 &amp;= (-x - 1) + (-y - 1) + 1 \\
+    &amp;= -(x + y) - 1 \\
+    &amp;= \sim (x + y) \\
+\end{align*}</span></p>
+<h4 id="d.-ux---uy--unsigned-y---x">D.
+<code>(ux - uy) == -(unsigned) (y - x)</code></h4>
+<p>True. The explicit cast serves no purpose because it only alters the
+interpretation of the bits. Using the definition of negation, the result
+of negating <code>(unsigned) (y - x)</code> and <code>(y - x)</code>
+would be the same. Therefore, we can distribute in the negative.</p>
+<p><span class="math display">\begin{align*}
+    - \text{(unsigned)} (y-x) &amp;= - (y-x)  &amp;&amp; \text{(same bit
+pattern)} \\
+    &amp;= x - y
+\end{align*}</span></p>
+<p>Since we are doing a comparison, both sides are interpreted as
+unsigned, therefore</p>
+<p><span class="math display">\begin{align*}
+    ux - uy &amp;= x - y \\
+    &amp;= - \text{(unsigned)} (y-x)
+\end{align*}</span></p>
+<h4 id="e.-x-2-2-x">E.
+<code>((x &gt;&gt; 2) &lt;&lt; 2) &lt;= x</code></h4>
+<p>True</p>
+<p><span class="math display">\begin{align*}
+    ((x &gt;&gt; 2) &lt;&lt; 2) &amp;= \text{floor}(x / 4) \cdot 4 \\
+    &amp;\leq (x / 4) \cdot 4 \\
+    &amp;= x
+\end{align*}</span></p>
+<h1 id="section-2">2.83</h1>
+<h2 id="problem-2">Problem</h2>
+<p>Consider binary numbers with a representation of the form <span
+class="math inline">0.y\ y\ y\ y</span>… where <span
+class="math inline">y</span> is a <span class="math inline">k</span>-bit
+sequence. Let <span class="math inline">Y</span> represent the decimal
+value for <span class="math inline">y</span>.</p>
+<p>For example:</p>
+<ol type="1">
+<li><p>1/3 -&gt; 0.01010101… (y = 01, k = 2, Y = 1)</p></li>
+<li><p>1/5 -&gt; 0.00110011… (y = 0011, k = 4, Y = 3)</p></li>
+</ol>
+<h2 id="answers-2">Answers</h2>
+<h3
+id="a.-find-the-expression-for-the-value-of-these-binary-numbers-in-terms-of-y-and-k">A.
+Find the expression for the value of these binary numbers in terms of Y
+and k</h3>
+<p>The expression to find the base-10 value of the given form of a
+binary number is the following:</p>
+<p><span class="math display">\sum_{n=1}^{\infty} Y
+(\frac{1}{2^k})^n</span></p>
+<p>This can be written as a infinite geometric series, which has the
+following property:</p>
+<p><span class="math display">\sum_{n=0}^{\infty} a r^{n} =
+\frac{a}{1-r}</span></p>
+<p>Re-arranging our equation so that we can exploit this, we get:</p>
+<p><span class="math display">\left[ \sum_{n=0}^{\infty} Y
+(\frac{1}{2^k})^n \right] - Y</span></p>
+<p>Finally, we get:</p>
+<p><span class="math display">\frac{Y}{1 - \frac{1}{2^k}} - Y = \left(
+\frac{Y}{2^k - 1} \right)</span></p>
+<h3 id="b.-numeric-values-of-examples">B. Numeric Values of
+Examples</h3>
+<ol type="a">
+<li>y = 101</li>
+</ol>
+<ul>
+<li><p>k = 3</p></li>
+<li><p>Y = 5</p></li>
+<li><p><strong>numeric value = <span
+class="math inline">\frac{5}{6}</span></strong></p></li>
+</ul>
+<ol start="2" type="a">
+<li>y = 0110</li>
+</ol>
+<ul>
+<li><p>k = 4</p></li>
+<li><p>Y = 6</p></li>
+<li><p><strong>numeric value = <span
+class="math inline">\frac{6}{15}</span></strong></p></li>
+</ul>
+<p>(c) y = 010011</p>
+<ul>
+<li><p>k = 6</p></li>
+<li><p>Y = 19</p></li>
+<li><p><strong>numeric value = <span
+class="math inline">\frac{19}{65}</span></strong></p></li>
+</ul>
+</body>
+</html>
