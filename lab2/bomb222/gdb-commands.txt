@@ -1,0 +1,2 @@
+break explode_bomb
+set disassemble-next-line on

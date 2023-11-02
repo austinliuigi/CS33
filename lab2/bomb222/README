@@ -1,3 +1,15 @@
 This is bomb 222.
 
 It belongs to 305785051 (austinliu@g.ucla.edu)
+
+
+# Running
+
+```
+make defuse
+```
+
+- to run secret stage, set line 2 in `defuse.txt` to  `18 19 21 24 28 33`
+- to pass secret stage, input 36
+
+- to run phase 6 instead of secret stage, set line 2 to be ` 1 2 4 7 11 16`
