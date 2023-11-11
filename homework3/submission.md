@@ -89,7 +89,7 @@ What would be returned from the statement `printf("%s", magic8ball[3][4]);`?
 
 - `magic8ball[3][4]` is an array of 8 chars
 
-1. Calculate the base address of `magic8ball[3][4]` *relative to the base address of `magic8ball`
+1. Calculate the base address of `magic8ball[3][4]` *relative to the base address of `magic8ball`*
 
 $$\left( 8 \cdot 8 \cdot 3 \right) + \left( 8 \cdot 4 \right) = 224$$
 
@@ -111,4 +111,4 @@ char | letter
 0x00 | NULL
 0x00 | NULL
 
-**In conclusion, the base address of `magic8ball[3][4]` is 0x7fffffffe0e0 and the word that is spells is "Wrong".**
+**In conclusion, the base address of `magic8ball[3][4]` is 0x7fffffffe0e0 and the word that it spells is "Wrong".**
